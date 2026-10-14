@@ -1,5 +1,19 @@
 [project]
 name = "fleetpulse-starter"
 version = "0.1.0"
+description = "Fleet telemetry ingestion and Kafka streaming starter"
+readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "confluent-kafka>=2.5",
+    "mygeotab>=0.9",
+    "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.uv]
+package = false
