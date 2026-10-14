@@ -1,0 +1,4 @@
+mygeotab>=0.9
+confluent-kafka>=2.5
+python-dotenv>=1.0
+pytest>=8.0
